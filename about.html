@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | UnityCircle Interfaith Network</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: { 50: '#f0f9ff', 100: '#e0f2fe', 600: '#009bb3', 700: '#0369a1', 800: '#075985', 900: '#0c4a6e' },
+                        harmony: '#10b981',
+                        solidarity: '#f59e0b',
+                        peace: '#6366f1',
+                        alert: '#ef4444'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .logo-gradient {
+            background: linear-gradient(135deg, #009bb3 0%, #10b981 100%);
+        }
+
+        .bg-mesh {
+            background-color: #f8fafc;
+            background-image:
+                radial-gradient(at 0% 0%, rgba(0, 155, 179, 0.03) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.03) 0px, transparent 50%);
+        }
+
+        .contact-card {
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+        }
+
+        .input-focus {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .input-focus:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -5px rgba(0, 155, 179, 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-white transition-colors duration-300">
+
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-slate-100 dark:border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 logo-gradient rounded-2xl flex items-center justify-center text-white font-extrabold text-xl shadow-lg shadow-teal-500/20">
+                    U</div>
+                <span class="text-2xl font-extrabold tracking-tight text-slate-800 dark:text-white">UnityCircle</span>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-10">
+                <div
+                    class="flex items-center gap-10 font-bold text-[13px] uppercase tracking-[0.15em] text-slate-600 dark:text-slate-300">
+                    <a href="index.html" class="hover:text-brand-600 transition">Home</a>
+                    <a href="about.html"
+                        class="hover:text-brand-600 transition  border-brand-600 pb-1 border-b-2">About</a>
+                    <a href="news.html" class="hover:text-brand-600 transition">News</a>
+                    <a href="programs.html" class="hover:text-brand-600 transition">Programs</a>
+                    <a href="events.html" class="hover:text-brand-600 transition">Events</a>
+                    <a href="gallery.html" class="hover:text-brand-600 transition">Gallery</a>
+                    <a href="volunteer.html" class="hover:text-brand-600 transition">Join Us</a>
+                    <a href="contact.html" class="hover:text-brand-600 transition">Contact</a>
+                </div>
+                <a href="donate.html"
+                    class="ml-6 bg-[#0089c4] text-white px-8 py-3.5 rounded-2xl font-bold text-sm hover:bg-[#0077aa] transition shadow-lg shadow-blue-500/20">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-40 pb-20 bg-white dark:bg-slate-900 border-b dark:border-slate-800">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <span
+                class="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-widest uppercase bg-brand-100 text-brand-700 rounded-full dark:bg-brand-900/30 dark:text-brand-300">Who
+                We Are</span>
+            <h1 class="text-4xl md:text-6xl font-black mb-8 leading-tight">A Collective Network for <span
+                    class="text-brand-600">Interfaith Harmony</span></h1>
+            <p class="text-xl text-slate-600 dark:text-slate-400 leading-relaxed italic">
+                "We are a collective platform comprising a network of citizens committed to interfaith harmony,
+                including faith leaders, activists, scholars, journalists, and other conscientious voices."
+            </p>
+        </div>
+    </header>
+
+    <section class="py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">
+                        <span class="w-8 h-1 bg-brand-600 rounded-full"></span>
+                        Our Philosophy
+                    </h2>
+                    <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-6">
+                        UnityCircle seeks to provide a space for interfaith engagement grounded in the principles of
+                        <strong>mutual respect and dialogue</strong>. We believe that by centering the voices of
+                        conscientious citizens, we can dismantle prejudice and build a foundation of social solidarity.
+                    </p>
+                    <div
+                        class="p-6 bg-brand-50 dark:bg-slate-900 rounded-3xl border border-brand-100 dark:border-slate-800">
+                        <p class="text-brand-800 dark:text-brand-200 font-medium">
+                            Our network bridges the gap between traditional religious institutions and modern civic
+                            activism, creating a unique synergy for peace-building.
+                        </p>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800"
+                        class="rounded-xlarge shadow-2xl" alt="Collaborative Dialogue">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-slate-100 dark:bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div
+                    class="bg-white dark:bg-slate-900 p-10 rounded-[2rem] shadow-sm border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all group">
+                    <div
+                        class="w-14 h-14 bg-brand-100 dark:bg-brand-900/30 text-brand-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Vision</h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        To realize a world where diverse spiritual traditions serve as a unified force for the common
+                        good, ensuring every citizen lives in a society free from religious discrimination and communal
+                        strife.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-white dark:bg-slate-900 p-10 rounded-[2rem] shadow-sm border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all group">
+                    <div
+                        class="w-14 h-14 bg-harmony/10 text-harmony rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Mission</h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        To empower interfaith networks through grassroots advocacy, transparent journalism, and
+                        scholarly research that highlights shared human values and promotes active peace-building.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-white dark:bg-slate-900 p-10 rounded-[2rem] shadow-sm border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all group">
+                    <div
+                        class="w-14 h-14 bg-solidarity/10 text-solidarity rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Rationale</h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        In an era of rising polarization, individual voices of reason are often drowned out. By
+                        organizing as a collective, we amplify the "conscientious majority" to counter hate and promote
+                        rational dialogue.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-black mb-16 text-center">Background & Ongoing Work</h2>
+
+            <div class="relative">
+                <div
+                    class="absolute left-1/2 -translate-x-1/2 h-full w-1 bg-slate-200 dark:bg-slate-800 hidden md:block">
+                </div>
+
+                <div class="space-y-20">
+                    <div class="relative flex flex-col md:flex-row items-center justify-between group">
+                        <div class="md:w-5/12 mb-8 md:mb-0 text-center md:text-right">
+                            <h4 class="text-2xl font-bold text-brand-600 mb-2">The Genesis</h4>
+                            <p class="text-slate-600 dark:text-slate-400">UnityCircle began as an informal digital
+                                safe-space where journalists and faith leaders shared insights on local conflict
+                                resolution during the mid-2010s.</p>
+                        </div>
+                        <div
+                            class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-brand-600 rounded-full border-4 border-white dark:border-slate-950 z-10 hidden md:block">
+                        </div>
+                        <div
+                            class="md:w-5/12 bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-lg border border-slate-100 dark:border-slate-800">
+                            <span class="text-xs font-black text-slate-400 uppercase">Est. 2016</span>
+                        </div>
+                    </div>
+
+                    <div class="relative flex flex-col md:flex-row-reverse items-center justify-between group">
+                        <div class="md:w-5/12 mb-8 md:mb-0 text-center md:text-left">
+                            <h4 class="text-2xl font-bold text-harmony mb-2">Current Advocacy</h4>
+                            <p class="text-slate-600 dark:text-slate-400">Currently, our network conducts "Harmony
+                                Workshops" across 12 cities, engaging over 5,000 students annually in inter-religious
+                                literacy and empathy training.</p>
+                        </div>
+                        <div
+                            class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-harmony rounded-full border-4 border-white dark:border-slate-950 z-10 hidden md:block">
+                        </div>
+                        <div
+                            class="md:w-5/12 bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-lg border border-slate-100 dark:border-slate-800">
+                            <span class="text-xs font-black text-slate-400 uppercase">Ongoing Phase</span>
+                        </div>
+                    </div>
+
+                    <div class="relative flex flex-col md:flex-row items-center justify-between group">
+                        <div class="md:w-5/12 mb-8 md:mb-0 text-center md:text-right">
+                            <h4 class="text-2xl font-bold text-solidarity mb-2">Digital Documentation</h4>
+                            <p class="text-slate-600 dark:text-slate-400">We are building an open-source archive of
+                                "Solidarity Stories," documenting thousands of instances where communities stood
+                                together despite external pressure.</p>
+                        </div>
+                        <div
+                            class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-solidarity rounded-full border-4 border-white dark:border-slate-950 z-10 hidden md:block">
+                        </div>
+                        <div
+                            class="md:w-5/12 bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-lg border border-slate-100 dark:border-slate-800">
+                            <span class="text-xs font-black text-slate-400 uppercase">Future Scale</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6">
+        <div class="max-w-4xl mx-auto bg-brand-900 rounded-[3rem] p-12 text-center text-white relative overflow-hidden">
+            <div class="relative z-10">
+                <h2 class="text-3xl font-bold mb-6">Want to join our network?</h2>
+                <p class="text-brand-100 mb-10 max-w-xl mx-auto">We are looking for conscientious voices to contribute
+                    to our mission of mutual respect and social solidarity.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="volunteer.html"
+                        class="bg-white text-brand-900 px-8 py-4 rounded-2xl font-bold hover:bg-brand-50 transition">Apply
+                        to Join</a>
+                    <a href="contact.html"
+                        class="bg-brand-800 text-white border border-brand-700 px-8 py-4 rounded-2xl font-bold hover:bg-brand-700 transition">Contact
+                        Us</a>
+                </div>
+            </div>
+            <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32"></div>
+        </div>
+    </section>
+
+    <footer class="py-20 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
+            <div class="md:col-span-2">
+                <a href="#" class="flex items-center gap-3 mb-8">
+                    <div
+                        class="w-10 h-10 bg-brand-600 rounded-xl flex items-center justify-center text-white font-bold">
+                        U</div>
+                    <span class="text-2xl font-black tracking-tighter">UnityCircle</span>
+                </a>
+                <p class="text-slate-500 text-lg max-w-sm leading-relaxed mb-8">Building a more harmonious world through
+                    evidence-based social initiatives and global solidarity.</p>
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition"><svg
+                            class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                        </svg></a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition"><svg
+                            class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.669-.072-4.949-.2-4.357-2.618-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg></a>
+                </div>
+            </div>
+            <div>
+                <h5 class="font-black uppercase tracking-widest text-xs mb-8">Organization</h5>
+                <ul class="space-y-4 text-slate-500 font-bold">
+                    <li><a href="about.html" class="hover:text-brand-600 transition">Our Story</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Team</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Impact Report</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Careers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-black uppercase tracking-widest text-xs mb-8">Resources</h5>
+                <ul class="space-y-4 text-slate-500 font-bold">
+                    <li><a href="#" class="hover:text-brand-600 transition">Press Kit</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Annual Audits</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Brand Assets</a></li>
+                    <li><a href="contact.html" class="hover:text-brand-600 transition">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-6 pt-12 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-slate-400 text-xs font-bold uppercase tracking-widest">© 2026 UnityCircle NGO. All Rights
+                Reserved.</p>
+            <div class="flex gap-8 text-[10px] font-black uppercase tracking-widest text-slate-400">
+                <a href="#" class="hover:text-brand-600 transition">Privacy Policy</a>
+                <a href="#" class="hover:text-brand-600 transition">Terms of Service</a>
+                <a href="#" class="hover:text-brand-600 transition">Cookie Settings</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

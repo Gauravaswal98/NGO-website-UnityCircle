@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Insights | UnityCircle NGO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: { 50: '#f0f9ff', 100: '#e0f2fe', 600: '#009bb3', 700: '#0369a1', 800: '#075985', 900: '#0c4a6e' },
+                        harmony: '#10b981',
+                        solidarity: '#f59e0b',
+                        peace: '#6366f1',
+                        alert: '#ef4444'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .logo-gradient {
+            background: linear-gradient(135deg, #009bb3 0%, #10b981 100%);
+        }
+
+        .bg-mesh {
+            background-color: #f8fafc;
+            background-image:
+                radial-gradient(at 0% 0%, rgba(0, 155, 179, 0.03) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.03) 0px, transparent 50%);
+        }
+
+        .contact-card {
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+        }
+
+        .input-focus {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .input-focus:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -5px rgba(0, 155, 179, 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 dark:bg-slate-950 font-sans text-slate-900 dark:text-slate-100">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-slate-100 dark:border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 logo-gradient rounded-2xl flex items-center justify-center text-white font-extrabold text-xl shadow-lg shadow-teal-500/20">
+                    U</div>
+                <span class="text-2xl font-extrabold tracking-tight text-slate-800 dark:text-white">UnityCircle</span>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-10">
+                <div
+                    class="flex items-center gap-10 font-bold text-[13px] uppercase tracking-[0.15em] text-slate-600 dark:text-slate-300">
+                    <a href="index.html" class="hover:text-brand-600 transition">Home</a>
+                    <a href="about.html" class="hover:text-brand-600 transition">About</a>
+                    <a href="news.html"
+                        class="hover:text-brand-600 transition border-brand-600 pb-1 border-b-2">News</a>
+                    <a href="programs.html" class="hover:text-brand-600 transition">Programs</a>
+                    <a href="events.html" class="hover:text-brand-600 transition">Events</a>
+                    <a href="gallery.html" class="hover:text-brand-600 transition">Gallery</a>
+                    <a href="volunteer.html" class="hover:text-brand-600 transition">Join Us</a>
+                    <a href="contact.html" class="hover:text-brand-600 transition">Contact</a>
+                </div>
+                <a href="donate.html"
+                    class="ml-6 bg-[#0089c4] text-white px-8 py-3.5 rounded-2xl font-bold text-sm hover:bg-[#0077aa] transition shadow-lg shadow-blue-500/20">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Featured Story -->
+    <header class="pt-36 pb-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative group rounded-[3rem] overflow-hidden aspect-[21/9] shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=2000"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                    alt="Main Story">
+                <div class="absolute inset-0 news-gradient-overlay"></div>
+                <div class="absolute bottom-0 left-0 p-8 md:p-16 max-w-4xl">
+                    <span
+                        class="px-4 py-1.5 bg-brand-600 text-white text-xs font-black uppercase tracking-widest rounded-full mb-6 inline-block">Breaking
+                        News</span>
+                    <h1 class="text-4xl md:text-6xl font-black text-white mb-6 leading-tight tracking-tighter">
+                        UnityCircle Secures Global Peace Grant for 2026 Resilience Projects</h1>
+                    <div class="flex items-center gap-6 text-slate-300">
+                        <div class="flex items-center gap-2">
+                            <img src="https://i.pravatar.cc/100?u=editor"
+                                class="w-10 h-10 rounded-full border-2 border-brand-500" alt="Author">
+                            <span class="font-bold text-sm">Elena Vance</span>
+                        </div>
+                        <span class="text-sm font-medium">May 24, 2026 • 8 min read</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- News Feed -->
+    <main class="max-w-7xl mx-auto px-6 pb-24">
+        <div class="flex flex-col lg:flex-row gap-12">
+
+            <!-- Main Content Area -->
+            <div class="flex-1">
+                <div class="flex justify-between items-end mb-12 border-b border-slate-200 dark:border-slate-800 pb-6">
+                    <h2 class="text-3xl font-black tracking-tight">Recent <span class="text-gradient">Updates</span>
+                    </h2>
+                    <div class="flex gap-2">
+                        <button
+                            class="p-2 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800"><svg
+                                class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg></button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <!-- News Item 1 -->
+                    <article class="group card-hover-effect">
+                        <div class="relative rounded-3xl overflow-hidden aspect-video mb-6">
+                            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1000"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                alt="Solar">
+                            <div
+                                class="absolute top-4 right-4 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md px-3 py-1 rounded-xl text-[10px] font-black uppercase tracking-widest text-brand-600">
+                                Innovation</div>
+                        </div>
+                        <p class="text-xs font-black text-brand-600 uppercase tracking-widest mb-3">Sustainability</p>
+                        <h3 class="text-2xl font-black mb-4 leading-tight group-hover:text-brand-600 transition">
+                            Solar-Powered Solidarity: New Tech Hubs Open in Rural Districts</h3>
+                        <p class="text-slate-600 dark:text-slate-400 font-medium mb-6 line-clamp-2">Bridging the digital
+                            divide with off-grid solutions, we've launched three new educational centers powered
+                            entirely by renewable energy.</p>
+                        <a href="#" class="inline-flex items-center gap-2 font-bold text-sm group/link">
+                            Read More <svg class="w-4 h-4 group-hover/link:translate-x-1 transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- News Item 2 -->
+                    <article class="group card-hover-effect">
+                        <div class="relative rounded-3xl overflow-hidden aspect-video mb-6">
+                            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80&w=1000"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                alt="Youth">
+                            <div
+                                class="absolute top-4 right-4 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md px-3 py-1 rounded-xl text-[10px] font-black uppercase tracking-widest text-brand-600">
+                                Events</div>
+                        </div>
+                        <p class="text-xs font-black text-harmony uppercase tracking-widest mb-3">Community</p>
+                        <h3 class="text-2xl font-black mb-4 leading-tight group-hover:text-brand-600 transition">Youth
+                            Summit 2026: 50 Countries Represented in Virtual Forum</h3>
+                        <p class="text-slate-600 dark:text-slate-400 font-medium mb-6 line-clamp-2">This year's summit
+                            focused on 'AI for Social Good', bringing together 5,000 young leaders to discuss
+                            algorithmic ethics and equality.</p>
+                        <a href="#" class="inline-flex items-center gap-2 font-bold text-sm group/link">
+                            Read More <svg class="w-4 h-4 group-hover/link:translate-x-1 transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- News Item 3 -->
+                    <article class="group card-hover-effect">
+                        <div class="relative rounded-3xl overflow-hidden aspect-video mb-6">
+                            <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=1000"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                alt="Impact">
+                        </div>
+                        <p class="text-xs font-black text-solidarity uppercase tracking-widest mb-3">Policy</p>
+                        <h3 class="text-2xl font-black mb-4 leading-tight group-hover:text-brand-600 transition">Annual
+                            Impact Report: 2025 Data Shows 40% Increase in Retention</h3>
+                        <p class="text-slate-600 dark:text-slate-400 font-medium mb-6 line-clamp-2">Our latest audit
+                            confirms that community-led initiatives have significantly higher long-term success rates
+                            than top-down models.</p>
+                        <a href="#" class="inline-flex items-center gap-2 font-bold text-sm group/link">
+                            Read Full Report <svg class="w-4 h-4 group-hover/link:translate-x-1 transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- News Item 4 -->
+                    <article class="group card-hover-effect">
+                        <div class="relative rounded-3xl overflow-hidden aspect-video mb-6">
+                            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=1000"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                alt="Kitchen">
+                        </div>
+                        <p class="text-xs font-black text-peace uppercase tracking-widest mb-3">Relief</p>
+                        <h3 class="text-2xl font-black mb-4 leading-tight group-hover:text-brand-600 transition">Mobile
+                            Kitchen Units Reach Conflict Zones in Record Time</h3>
+                        <p class="text-slate-600 dark:text-slate-400 font-medium mb-6 line-clamp-2">Our rapid response
+                            logistics team deployed 15 units within 48 hours of the recent humanitarian request in the
+                            eastern corridor.</p>
+                        <a href="#" class="inline-flex items-center gap-2 font-bold text-sm group/link">
+                            Read More <svg class="w-4 h-4 group-hover/link:translate-x-1 transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </article>
+                </div>
+
+                <div class="mt-20 flex justify-center">
+                    <button
+                        class="px-10 py-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl font-black uppercase tracking-widest text-xs hover:border-brand-600 transition shadow-xl">Load
+                        More Stories</button>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="w-full lg:w-96 space-y-12">
+                <!-- Newsletter -->
+                <div
+                    class="p-8 rounded-[2.5rem] bg-brand-600 text-white shadow-2xl shadow-brand-600/20 relative overflow-hidden">
+                    <div class="absolute -top-12 -right-12 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
+                    <h4 class="text-2xl font-black mb-4 leading-tight">Insight in your inbox.</h4>
+                    <p class="text-brand-100 text-sm font-medium mb-6">Join 45,000+ subscribers receiving our weekly
+                        synthesis of peace research.</p>
+                    <input type="email" placeholder="Your email"
+                        class="w-full bg-white/10 border border-white/20 rounded-xl px-5 py-4 mb-3 outline-none focus:bg-white/20 transition placeholder:text-brand-100 text-sm">
+                    <button
+                        class="w-full bg-white text-brand-600 py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:scale-[1.02] transition active:scale-95">Subscribe</button>
+                </div>
+
+                <!-- Trending Topics -->
+                <div
+                    class="p-8 rounded-[2.5rem] bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+                    <h4 class="text-lg font-black uppercase tracking-widest mb-8">Trending Topics</h4>
+                    <div class="space-y-6">
+                        <a href="#" class="flex gap-4 group">
+                            <div class="w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0">
+                                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=200"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition" alt="Trend">
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-sm leading-tight mb-2 line-clamp-2">How Data is Reshaping
+                                    Modern Humanitarianism</h5>
+                                <span
+                                    class="text-[10px] font-black uppercase text-slate-400 tracking-widest">Technology</span>
+                            </div>
+                        </a>
+                        <a href="#" class="flex gap-4 group">
+                            <div class="w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0">
+                                <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=200"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition" alt="Trend">
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-sm leading-tight mb-2 line-clamp-2">Policy Shift: New
+                                    Guidelines for International Aid</h5>
+                                <span class="text-[10px] font-black uppercase text-slate-400 tracking-widest">Global
+                                    Affairs</span>
+                            </div>
+                        </a>
+                        <a href="#" class="flex gap-4 group">
+                            <div class="w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0">
+                                <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?auto=format&fit=crop&q=80&w=200"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition" alt="Trend">
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-sm leading-tight mb-2 line-clamp-2">Mental Health Resilience
+                                    in Disaster Zones</h5>
+                                <span
+                                    class="text-[10px] font-black uppercase text-slate-400 tracking-widest">Wellness</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Ad/CTA -->
+                <div class="group relative rounded-[2.5rem] overflow-hidden aspect-square">
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=600"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-1000" alt="Join">
+                    <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-[2px] p-10 flex flex-col justify-end">
+                        <h4 class="text-2xl font-black text-white mb-4">Be the Story.</h4>
+                        <p class="text-slate-200 text-sm mb-6">Apply for our global correspondent fellowship for the
+                            2026 season.</p>
+                        <button
+                            class="bg-white text-slate-900 font-black py-3 rounded-xl uppercase tracking-widest text-[10px]">Learn
+                            More</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-20 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
+            <div class="md:col-span-2">
+                <a href="#" class="flex items-center gap-3 mb-8">
+                    <div
+                        class="w-10 h-10 bg-brand-600 rounded-xl flex items-center justify-center text-white font-bold">
+                        U</div>
+                    <span class="text-2xl font-black tracking-tighter">UnityCircle</span>
+                </a>
+                <p class="text-slate-500 text-lg max-w-sm leading-relaxed mb-8">Building a more harmonious world through
+                    evidence-based social initiatives and global solidarity.</p>
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition"><svg
+                            class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                        </svg></a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition"><svg
+                            class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.669-.072-4.949-.2-4.357-2.618-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg></a>
+                </div>
+            </div>
+            <div>
+                <h5 class="font-black uppercase tracking-widest text-xs mb-8">Organization</h5>
+                <ul class="space-y-4 text-slate-500 font-bold">
+                    <li><a href="#" class="hover:text-brand-600 transition">Our Story</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Team</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Impact Report</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Careers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-black uppercase tracking-widest text-xs mb-8">Resources</h5>
+                <ul class="space-y-4 text-slate-500 font-bold">
+                    <li><a href="#" class="hover:text-brand-600 transition">Press Kit</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Annual Audits</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Brand Assets</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-6 pt-12 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-slate-400 text-xs font-bold uppercase tracking-widest">© 2026 UnityCircle NGO. All Rights
+                Reserved.</p>
+            <div class="flex gap-8 text-[10px] font-black uppercase tracking-widest text-slate-400">
+                <a href="#" class="hover:text-brand-600 transition">Privacy Policy</a>
+                <a href="#" class="hover:text-brand-600 transition">Terms of Service</a>
+                <a href="#" class="hover:text-brand-600 transition">Cookie Settings</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

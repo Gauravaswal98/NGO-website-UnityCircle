@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Our Mission | UnityCircle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: { 50: '#f0f9ff', 100: '#e0f2fe', 600: '#009bb3', 700: '#0369a1', 800: '#075985', 900: '#0c4a6e' },
+                        harmony: '#10b981',
+                        solidarity: '#f59e0b',
+                        peace: '#6366f1'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .logo-gradient {
+            background: linear-gradient(135deg, #009bb3 0%, #10b981 100%);
+        }
+
+        .bg-mesh {
+            background-color: #f8fafc;
+            background-image:
+                radial-gradient(at 0% 0%, rgba(0, 155, 179, 0.05) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.05) 0px, transparent 50%);
+        }
+
+        .donation-card {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+        }
+
+        .amount-btn:focus {
+            outline: none;
+            border-color: #009bb3;
+            background-color: #009bb3;
+            color: white;
+            box-shadow: 0 10px 15px -3px rgba(0, 155, 179, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-mesh min-h-screen flex flex-col font-sans text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-slate-100 dark:border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-4 group">
+                <div
+                    class="w-12 h-12 logo-gradient rounded-2xl flex items-center justify-center text-white font-extrabold text-xl shadow-lg shadow-teal-500/20 group-hover:rotate-6 transition-transform">
+                    U</div>
+                <span class="text-2xl font-extrabold tracking-tight text-slate-800 dark:text-white">UnityCircle</span>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-10">
+                <div
+                    class="flex items-center gap-10 font-bold text-[13px] uppercase tracking-[0.15em] text-slate-600 dark:text-slate-300">
+                    <a href="index.html" class="hover:text-brand-600 transition">Home</a>
+                    <a href="about.html" class="hover:text-brand-600 transition">About</a>
+                    <a href="news.html" class="hover:text-brand-600 transition">News</a>
+                    <a href="programs.html" class="hover:text-brand-600 transition">Programs</a>
+                    <a href="events.html" class="hover:text-brand-600 transition">Events</a>
+                    <a href="gallery.html" class="hover:text-brand-600 transition">Gallery</a>
+                    <a href="volunteer.html" class="hover:text-brand-600 transition">Join Us</a>
+                    <a href="contact.html" class="hover:text-brand-600 transition">Contact</a>
+                </div>
+                <a href="donate.html"
+                    class="ml-6 bg-[#0089c4] text-white px-8 py-3.5 rounded-2xl font-bold text-sm hover:bg-[#0077aa] transition shadow-lg shadow-blue-500/20">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center pt-32 pb-20 px-6">
+        <div
+            class="max-w-5xl w-full bg-white donation-card rounded-[3rem] overflow-hidden grid lg:grid-cols-5 h-full min-h-[650px]">
+
+            <!-- Left Info Panel -->
+            <div
+                class="lg:col-span-2 bg-slate-900 p-12 text-white flex flex-col justify-between relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-brand-600/20 rounded-full blur-[80px] -mr-32 -mt-32">
+                </div>
+                <div class="relative z-10">
+                    <div class="w-12 h-1.5 bg-brand-600 rounded-full mb-8"></div>
+                    <h2 class="text-4xl font-extrabold mb-6 leading-tight">Every Contribution <span
+                            class="text-brand-600">Saves Lives.</span></h2>
+                    <p class="text-slate-400 leading-relaxed text-lg mb-8">Your generosity provides immediate relief,
+                        clean water, and educational opportunities to communities in crisis.</p>
+
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-sm font-medium">
+                            <svg class="w-5 h-5 text-harmony" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            100% Transparency in allocation
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-medium">
+                            <svg class="w-5 h-5 text-harmony" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            Secure encrypted payments
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-medium">
+                            <svg class="w-5 h-5 text-harmony" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            Tax-deductible receipts
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="relative z-10 mt-12">
+                    <div class="bg-white/5 backdrop-blur-md p-6 rounded-3xl border border-white/10">
+                        <p class="text-slate-300 italic text-sm leading-relaxed">"UnityCircle didn't ask for my creed,
+                            they only asked if I was hungry. They are the bridge in a divided world."</p>
+                        <div class="mt-4 flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-slate-700 overflow-hidden">
+                                <img src="https://i.pravatar.cc/100?u=relief" alt="Recipient">
+                            </div>
+                            <span class="text-xs font-bold text-white uppercase tracking-widest">Ameer K. • Relief
+                                Recipient</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Donation Form -->
+            <div class="lg:col-span-3 p-12 lg:p-16 flex flex-col justify-center">
+                <div class="mb-10">
+                    <h3 class="text-xs font-black uppercase text-brand-600 mb-2 tracking-[0.2em]">Donation Amount</h3>
+                    <p class="text-slate-500 text-sm">Choose how much you'd like to contribute.</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+                    <button
+                        class="amount-btn py-5 border-2 border-slate-100 rounded-2xl font-black text-lg transition-all hover:border-brand-600 hover:bg-slate-50 active:scale-95">$25</button>
+                    <button
+                        class="amount-btn py-5 border-2 border-slate-100 rounded-2xl font-black text-lg transition-all hover:border-brand-600 hover:bg-slate-50 active:scale-95">$50</button>
+                    <button
+                        class="amount-btn py-5 border-2 border-slate-100 rounded-2xl font-black text-lg transition-all hover:border-brand-600 hover:bg-slate-50 active:scale-95">$100</button>
+                    <button
+                        class="amount-btn py-5 border-2 border-slate-100 rounded-2xl font-black text-lg transition-all hover:border-brand-600 hover:bg-slate-50 active:scale-95">$250</button>
+                    <button
+                        class="amount-btn py-5 border-2 border-slate-100 rounded-2xl font-black text-lg transition-all hover:border-brand-600 hover:bg-slate-50 active:scale-95">$500</button>
+                    <button
+                        class="amount-btn py-5 border-2 border-slate-100 rounded-2xl font-black text-lg transition-all hover:border-brand-600 hover:bg-slate-50 active:scale-95">$1k</button>
+                </div>
+
+                <div class="relative mb-10">
+                    <span class="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 font-bold">$</span>
+                    <input type="number" placeholder="Enter Custom Amount"
+                        class="w-full pl-10 pr-6 py-5 bg-slate-50 border-2 border-transparent rounded-2xl outline-none focus:ring-4 focus:ring-brand-600/10 focus:border-brand-600 focus:bg-white transition-all font-bold">
+                </div>
+
+                <div class="space-y-4">
+                    <button
+                        class="w-full py-6 bg-brand-600 text-white rounded-2xl font-black text-lg shadow-xl shadow-brand-600/20 hover:bg-brand-700 hover:-translate-y-1 transition-all active:scale-[0.98]">
+                        Complete Donation
+                    </button>
+                    <p class="text-center text-[11px] text-slate-400 font-bold uppercase tracking-widest">
+                        Secure SSL Encryption • No Hidden Fees
+                    </p>
+                </div>
+
+                <!-- Payment Methods -->
+                <div
+                    class="mt-12 pt-8 border-t border-slate-100 flex justify-center items-center gap-6 opacity-40 grayscale">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" class="h-4"
+                        alt="Visa">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" class="h-6"
+                        alt="Mastercard">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" class="h-5" alt="Paypal">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" class="h-5"
+                        alt="Apple Pay">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-12 px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 logo-gradient rounded-xl flex items-center justify-center text-white font-bold shadow-md shadow-teal-500/20">
+                    U</div>
+                <span class="text-xl font-bold text-slate-800">UnityCircle</span>
+            </div>
+
+            <p class="text-slate-500 text-[14px] font-medium">
+                © 2026 UnityCircle NGO. Registered Humanitarian Collective.
+            </p>
+
+            <div class="flex gap-10 text-[13px] font-bold uppercase tracking-widest text-slate-400">
+                <a href="#" class="hover:text-brand-600 transition">Privacy Policy</a>
+                <a href="#" class="hover:text-brand-600 transition">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

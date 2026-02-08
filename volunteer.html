@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer | UnityCircle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: { 50: '#f0f9ff', 100: '#e0f2fe', 600: '#009bb3', 700: '#0369a1', 800: '#075985', 900: '#0c4a6e' },
+                        harmony: '#10b981',
+                        solidarity: '#f59e0b',
+                        peace: '#6366f1',
+                        alert: '#ef4444'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .logo-gradient {
+            background: linear-gradient(135deg, #009bb3 0%, #10b981 100%);
+        }
+
+        .bg-mesh {
+            background-color: #f8fafc;
+            background-image:
+                radial-gradient(at 0% 0%, rgba(0, 155, 179, 0.03) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.03) 0px, transparent 50%);
+        }
+
+        .contact-card {
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+        }
+
+        .input-focus {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .input-focus:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -5px rgba(0, 155, 179, 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 font-sans text-slate-900 hero-mesh min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-slate-100 dark:border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-4 group">
+                <div
+                    class="w-12 h-12 logo-gradient rounded-2xl flex items-center justify-center text-white font-extrabold text-xl shadow-lg shadow-teal-500/20 group-hover:rotate-6 transition-transform">
+                    U</div>
+                <span class="text-2xl font-extrabold tracking-tight text-slate-800 dark:text-white">UnityCircle</span>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-10">
+                <div
+                    class="flex items-center gap-10 font-bold text-[13px] uppercase tracking-[0.15em] text-slate-600 dark:text-slate-300">
+                    <a href="index.html" class="hover:text-brand-600 transition">Home</a>
+                    <a href="about.html" class="hover:text-brand-600 transition">About</a>
+                    <a href="news.html" class="hover:text-brand-600 transition">News</a>
+                    <a href="programs.html" class="hover:text-brand-600 transition">Programs</a>
+                    <a href="events.html" class="hover:text-brand-600 transition">Events</a>
+                    <a href="gallery.html" class="hover:text-brand-600 transition">Gallery</a>
+                    <a href="volunteer.html" class="text-brand-600 border-b-2 border-brand-600 pb-1">Join Us</a>
+                    <a href="contact.html" class="hover:text-brand-600 transition">Contact</a>
+                </div>
+                <a href="donate.html"
+                    class="ml-6 bg-[#0089c4] text-white px-8 py-3.5 rounded-2xl font-bold text-sm hover:bg-[#0077aa] transition shadow-lg shadow-blue-500/20">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-40 pb-24 px-6">
+        <div class="max-w-5xl mx-auto">
+
+            <div class="grid lg:grid-cols-5 gap-16 items-start">
+
+                <!-- Left: Content & Context -->
+                <div class="lg:col-span-2 space-y-8">
+                    <div>
+                        <span
+                            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 text-teal-700 text-xs font-bold uppercase tracking-widest mb-4">
+                            <span class="w-2 h-2 rounded-full bg-teal-500 animate-pulse"></span>
+                            Recruiting Volunteers
+                        </span>
+                        <h1 class="text-5xl font-black text-slate-900 leading-tight mb-6">
+                            Become a <span class="text-transparent bg-clip-text logo-gradient">Catalyst</span> for
+                            Peace.
+                        </h1>
+                        <p class="text-lg text-slate-600 leading-relaxed">
+                            Your skills can bridge divides. Join our global network of change-makers dedicated to
+                            relief, education, and community dialogue.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div
+                            class="flex gap-4 p-4 rounded-2xl hover:bg-white hover:shadow-xl hover:shadow-slate-200/50 transition-all group">
+                            <div
+                                class="w-12 h-12 shrink-0 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Community Driven</h4>
+                                <p class="text-sm text-slate-500">Work directly with local leaders to implement
+                                    sustainable solutions.</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex gap-4 p-4 rounded-2xl hover:bg-white hover:shadow-xl hover:shadow-slate-200/50 transition-all group">
+                            <div
+                                class="w-12 h-12 shrink-0 rounded-xl bg-teal-50 flex items-center justify-center text-teal-600 group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Immediate Impact</h4>
+                                <p class="text-sm text-slate-500">From logistics to storytelling, your efforts create
+                                    visible change.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Application Form -->
+                <div class="lg:col-span-3">
+                    <div
+                        class="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-2xl shadow-slate-200/60 border border-slate-100 card-blur relative overflow-hidden">
+                        <!-- Decorative glow -->
+                        <div class="absolute -top-24 -right-24 w-48 h-48 bg-teal-400/10 blur-3xl rounded-full"></div>
+
+                        <form id="volunteerForm" class="space-y-6 relative z-10">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="floating-label-group">
+                                    <label
+                                        class="block text-[11px] font-black uppercase tracking-wider text-slate-400 mb-2 transition-all">Full
+                                        Name</label>
+                                    <input type="text" placeholder="Alex Johnson" required
+                                        class="input-animated w-full p-4 bg-slate-50 rounded-2xl border border-slate-200 focus:bg-white focus:border-brand-600 outline-none transition-all placeholder:text-slate-300">
+                                </div>
+                                <div class="floating-label-group">
+                                    <label
+                                        class="block text-[11px] font-black uppercase tracking-wider text-slate-400 mb-2 transition-all">Email
+                                        Address</label>
+                                    <input type="email" placeholder="alex@example.com" required
+                                        class="input-animated w-full p-4 bg-slate-50 rounded-2xl border border-slate-200 focus:bg-white focus:border-brand-600 outline-none transition-all placeholder:text-slate-300">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label
+                                        class="block text-[11px] font-black uppercase tracking-wider text-slate-400 mb-2">Primary
+                                        Skillset</label>
+                                    <div class="relative">
+                                        <select
+                                            class="appearance-none w-full p-4 bg-slate-50 rounded-2xl border border-slate-200 focus:bg-white focus:border-brand-600 outline-none transition-all cursor-pointer font-medium text-slate-700">
+                                            <option>Logistics & Relief</option>
+                                            <option>Education & Teaching</option>
+                                            <option>Media & Storytelling</option>
+                                            <option>Interfaith Dialogue</option>
+                                        </select>
+                                        <div
+                                            class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M19 9l-7 7-7-7" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label
+                                        class="block text-[11px] font-black uppercase tracking-wider text-slate-400 mb-2">Availability</label>
+                                    <div class="relative">
+                                        <select
+                                            class="appearance-none w-full p-4 bg-slate-50 rounded-2xl border border-slate-200 focus:bg-white focus:border-brand-600 outline-none transition-all cursor-pointer font-medium text-slate-700">
+                                            <option>Weekends Only</option>
+                                            <option>Flexible (Remote)</option>
+                                            <option>Full-time On-site</option>
+                                            <option>Project Based</option>
+                                        </select>
+                                        <div
+                                            class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M19 9l-7 7-7-7" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label
+                                    class="block text-[11px] font-black uppercase tracking-wider text-slate-400 mb-2">Brief
+                                    Motivation</label>
+                                <textarea rows="4" placeholder="Tell us why you'd like to join UnityCircle..."
+                                    class="input-animated w-full p-4 bg-slate-50 rounded-2xl border border-slate-200 focus:bg-white focus:border-brand-600 outline-none transition-all resize-none placeholder:text-slate-300"></textarea>
+                            </div>
+
+                            <div class="flex items-center gap-3 py-2">
+                                <input type="checkbox" id="terms"
+                                    class="w-5 h-5 rounded-lg border-slate-300 text-brand-600 focus:ring-brand-500 cursor-pointer">
+                                <label for="terms" class="text-xs text-slate-500 font-medium cursor-pointer">I agree to
+                                    the volunteer code of conduct and privacy policy.</label>
+                            </div>
+
+                            <button type="submit"
+                                class="w-full py-5 bg-brand-600 text-white rounded-2xl font-bold text-lg shadow-xl shadow-teal-500/20 hover:bg-brand-700 active:scale-[0.98] transform transition-all flex items-center justify-center gap-3 group">
+                                Apply to Volunteer
+                                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+
+                    <p class="text-center mt-8 text-slate-400 text-sm font-medium">
+                        Questions? Contact our volunteer coordinator at
+                        <a href="mailto:join@unitycircle.org"
+                            class="text-brand-600 hover:underline">join@unitycircle.org</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-20 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
+            <div class="md:col-span-2">
+                <a href="#" class="flex items-center gap-3 mb-8">
+                    <div
+                        class="w-10 h-10 bg-brand-600 rounded-xl flex items-center justify-center text-white font-bold">
+                        U</div>
+                    <span class="text-2xl font-black tracking-tighter">UnityCircle</span>
+                </a>
+                <p class="text-slate-500 text-lg max-w-sm leading-relaxed mb-8">Building a more harmonious world through
+                    evidence-based social initiatives and global solidarity.</p>
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition"><svg
+                            class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                        </svg></a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition"><svg
+                            class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.669-.072-4.949-.2-4.357-2.618-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg></a>
+                </div>
+            </div>
+            <div>
+                <h5 class="font-black uppercase tracking-widest text-xs mb-8">Organization</h5>
+                <ul class="space-y-4 text-slate-500 font-bold">
+                    <li><a href="#" class="hover:text-brand-600 transition">Our Story</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Team</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Impact Report</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Careers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-black uppercase tracking-widest text-xs mb-8">Resources</h5>
+                <ul class="space-y-4 text-slate-500 font-bold">
+                    <li><a href="#" class="hover:text-brand-600 transition">Press Kit</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Annual Audits</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Brand Assets</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-6 pt-12 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-slate-400 text-xs font-bold uppercase tracking-widest">© 2026 UnityCircle NGO. All Rights
+                Reserved.</p>
+            <div class="flex gap-8 text-[10px] font-black uppercase tracking-widest text-slate-400">
+                <a href="#" class="hover:text-brand-600 transition">Privacy Policy</a>
+                <a href="#" class="hover:text-brand-600 transition">Terms of Service</a>
+                <a href="#" class="hover:text-brand-600 transition">Cookie Settings</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission animation/feedback
+        document.getElementById('volunteerForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerHTML;
+
+            btn.disabled = true;
+            btn.innerHTML = `
+                <svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Processing...
+            `;
+
+            // Mock submission delay
+            setTimeout(() => {
+                btn.classList.replace('bg-brand-600', 'bg-accent');
+                btn.innerHTML = 'Application Received! ✨';
+
+                // Show a success message overlay
+                const successMsg = document.createElement('div');
+                successMsg.className = 'mt-4 p-4 bg-teal-50 text-teal-700 text-sm font-bold rounded-xl border border-teal-100 animate-bounce';
+                successMsg.innerText = "Check your email for next steps. We'll be in touch within 48 hours!";
+                e.target.appendChild(successMsg);
+            }, 1500);
+        });
+    </script>
+</body>
+
+</html>

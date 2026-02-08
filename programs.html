@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Initiatives | UnityCircle NGO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: { 50: '#f0f9ff', 100: '#e0f2fe', 600: '#009bb3', 700: '#0369a1', 800: '#075985', 900: '#0c4a6e' },
+                        harmony: '#10b981',
+                        solidarity: '#f59e0b',
+                        peace: '#6366f1',
+                        alert: '#ef4444'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .logo-gradient {
+            background: linear-gradient(135deg, #009bb3 0%, #10b981 100%);
+        }
+
+        .bg-mesh {
+            background-color: #f8fafc;
+            background-image:
+                radial-gradient(at 0% 0%, rgba(0, 155, 179, 0.03) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.03) 0px, transparent 50%);
+        }
+
+        .contact-card {
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+        }
+
+        .input-focus {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .input-focus:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -5px rgba(0, 155, 179, 0.1);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-[#f8fafc] dark:bg-slate-950 font-sans text-slate-900 dark:text-slate-100 transition-colors duration-500">
+
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-slate-100 dark:border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-4 group">
+                <div
+                    class="w-12 h-12 logo-gradient rounded-2xl flex items-center justify-center text-white font-extrabold text-xl shadow-lg shadow-teal-500/20 group-hover:rotate-6 transition-transform">
+                    U</div>
+                <span class="text-2xl font-extrabold tracking-tight text-slate-800 dark:text-white">UnityCircle</span>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-10">
+                <div
+                    class="flex items-center gap-10 font-bold text-[13px] uppercase tracking-[0.15em] text-slate-600 dark:text-slate-300">
+                    <a href="index.html" class="hover:text-brand-600 transition">Home</a>
+                    <a href="about.html" class="hover:text-brand-600 transition">About</a>
+                    <a href="news.html" class="hover:text-brand-600 transition">News</a>
+                    <a href="programs.html"
+                        class="hover:text-brand-600 transition  border-b-2 border-brand-600 pb-1">Programs</a>
+                    <a href="events.html" class="hover:text-brand-600 transition">Events</a>
+                    <a href="gallery.html" class="hover:text-brand-600 transition">Gallery</a>
+                    <a href="volunteer.html" class="hover:text-brand-600 transition">Join Us</a>
+                    <a href="contact.html" class="hover:text-brand-600 transition">Contact</a>
+                </div>
+                <a href="donate.html"
+                    class="ml-6 bg-[#0089c4] text-white px-8 py-3.5 rounded-2xl font-bold text-sm hover:bg-[#0077aa] transition shadow-lg shadow-blue-500/20">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-48 pb-20 px-6 relative overflow-hidden">
+        <div
+            class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-gradient-to-b from-brand-50 to-transparent dark:from-brand-900/10 -z-10">
+        </div>
+        <div class="max-w-4xl mx-auto text-center">
+            <span
+                class="px-5 py-2 rounded-full bg-brand-100 dark:bg-brand-900/30 text-brand-700 dark:text-brand-300 text-xs font-bold uppercase tracking-[0.3em] mb-8 inline-block">Impact
+                & Action</span>
+            <h1 class="text-5xl md:text-7xl font-black mb-8 leading-[1.1] tracking-tighter">Strategic <span
+                    class="text-gradient">Initiatives</span> for Peace</h1>
+            <p
+                class="text-lg md:text-xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-2xl mx-auto font-medium">
+                We design and deploy evidence-based programs that foster interfaith engagement, social solidarity, and
+                humanitarian resilience across divided landscapes.
+            </p>
+        </div>
+    </header>
+
+    <section class="pb-16 px-6">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-center gap-4">
+            <button
+                class="px-8 py-3.5 rounded-2xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold shadow-2xl transition">All
+                Programs</button>
+            <button
+                class="px-8 py-3.5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 font-bold hover:border-brand-600 transition shadow-sm">Education</button>
+            <button
+                class="px-8 py-3.5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 font-bold hover:border-brand-600 transition shadow-sm">Relief
+                Ops</button>
+            <button
+                class="px-8 py-3.5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 font-bold hover:border-brand-600 transition shadow-sm">Media
+                Advocacy</button>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-6 pb-40">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+            <!-- Program 1: Education -->
+            <div
+                class="group relative bg-white dark:bg-slate-900 rounded-[2.5rem] border border-slate-200/60 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none overflow-hidden hover:-translate-y-2 transition-all duration-500">
+                <div class="aspect-[16/9] overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                        alt="Education">
+                    <div
+                        class="absolute top-6 left-6 px-4 py-2 bg-brand-600 text-white text-xs font-black uppercase tracking-widest rounded-xl">
+                        Education</div>
+                </div>
+                <div class="p-10">
+                    <div class="flex items-start justify-between mb-4">
+                        <h3 class="text-3xl font-black group-hover:text-brand-600 transition-colors">Scholarship for
+                            Dialogue</h3>
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-brand-50 dark:bg-brand-900/20 flex items-center justify-center text-brand-600">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed font-medium">
+                        Empowering graduate researchers and journalists to study cross-faith success stories and
+                        document pluralistic co-existence models worldwide.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mb-8 py-6 border-y border-slate-100 dark:border-slate-800">
+                        <div>
+                            <p class="text-xs font-black text-slate-400 uppercase mb-1">Impact</p>
+                            <p class="text-xl font-bold">450 Researchers</p>
+                        </div>
+                        <div>
+                            <p class="text-xs font-black text-slate-400 uppercase mb-1">Status</p>
+                            <p class="text-xl font-bold text-harmony">Active Phase</p>
+                        </div>
+                    </div>
+                    <div class="mb-8">
+                        <div class="flex justify-between text-xs font-black uppercase text-slate-500 mb-2">
+                            <span>Funding Goal</span>
+                            <span>$85,000 / $120k</span>
+                        </div>
+                        <div class="w-full h-3 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                            <div class="h-full bg-brand-600 rounded-full relative" style="width: 70%;">
+                                <div class="absolute inset-0 progress-shimmer"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="volunteer.html"
+                        class="inline-flex items-center gap-3 font-extrabold text-brand-600 hover:gap-5 transition-all">Support
+                        This Program <span>→</span></a>
+                </div>
+            </div>
+
+            <!-- Program 2: Relief Ops -->
+            <div
+                class="group relative bg-white dark:bg-slate-900 rounded-[2.5rem] border border-slate-200/60 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none overflow-hidden hover:-translate-y-2 transition-all duration-500">
+                <div class="aspect-[16/9] overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1469571483357-af9899847dd1?auto=format&fit=crop&w=800"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                        alt="Relief">
+                    <div
+                        class="absolute top-6 left-6 px-4 py-2 bg-harmony text-white text-xs font-black uppercase tracking-widest rounded-xl">
+                        Relief Ops</div>
+                </div>
+                <div class="p-10">
+                    <div class="flex items-start justify-between mb-4">
+                        <h3 class="text-3xl font-black group-hover:text-brand-600 transition-colors">Solidarity Kitchens
+                        </h3>
+                        <div class="w-14 h-14 rounded-2xl bg-harmony/10 flex items-center justify-center text-harmony">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed font-medium">
+                        Deploying mobile nutritional hubs in conflict-affected border regions, providing hot meals to
+                        families without cultural or religious barriers.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mb-8 py-6 border-y border-slate-100 dark:border-slate-800">
+                        <div>
+                            <p class="text-xs font-black text-slate-400 uppercase mb-1">Meals Served</p>
+                            <p class="text-xl font-bold">12,000+ Weekly</p>
+                        </div>
+                        <div>
+                            <p class="text-xs font-black text-slate-400 uppercase mb-1">Locations</p>
+                            <p class="text-xl font-bold">8 Districts</p>
+                        </div>
+                    </div>
+                    <div class="mb-8">
+                        <div class="flex justify-between text-xs font-black uppercase text-slate-500 mb-2">
+                            <span>Funding Goal</span>
+                            <span>$240,000 / $300k</span>
+                        </div>
+                        <div class="w-full h-3 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                            <div class="h-full bg-harmony rounded-full relative" style="width: 80%;">
+                                <div class="absolute inset-0 progress-shimmer"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="volunteer.html"
+                        class="inline-flex items-center gap-3 font-extrabold text-brand-600 hover:gap-5 transition-all">Support
+                        This Program <span>→</span></a>
+                </div>
+            </div>
+
+            <!-- Program 3: Media Advocacy -->
+            <div
+                class="group relative bg-white dark:bg-slate-900 rounded-[2.5rem] border border-slate-200/60 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none overflow-hidden hover:-translate-y-2 transition-all duration-500">
+                <div class="aspect-[16/9] overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=800"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                        alt="Media Lab">
+                    <div
+                        class="absolute top-6 left-6 px-4 py-2 bg-peace text-white text-xs font-black uppercase tracking-widest rounded-xl">
+                        Media Advocacy</div>
+                </div>
+                <div class="p-10">
+                    <div class="flex items-start justify-between mb-4">
+                        <h3 class="text-3xl font-black group-hover:text-brand-600 transition-colors">Harmony Content Lab
+                        </h3>
+                        <div class="w-14 h-14 rounded-2xl bg-peace/10 flex items-center justify-center text-peace">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 00-2 2z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed font-medium">
+                        A collaborative studio for young creators to produce short films and digital campaigns that
+                        counter polarization with stories of unity.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mb-8 py-6 border-y border-slate-100 dark:border-slate-800">
+                        <div>
+                            <p class="text-xs font-black text-slate-400 uppercase mb-1">Content Reach</p>
+                            <p class="text-xl font-bold">2.4M Impressions</p>
+                        </div>
+                        <div>
+                            <p class="text-xs font-black text-slate-400 uppercase mb-1">Creators</p>
+                            <p class="text-xl font-bold">120 Fellows</p>
+                        </div>
+                    </div>
+                    <div class="mb-8">
+                        <div class="flex justify-between text-xs font-black uppercase text-slate-500 mb-2">
+                            <span>Funding Goal</span>
+                            <span>$45,000 / $100k</span>
+                        </div>
+                        <div class="w-full h-3 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                            <div class="h-full bg-peace rounded-full relative" style="width: 45%;">
+                                <div class="absolute inset-0 progress-shimmer"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="volunteer.html"
+                        class="inline-flex items-center gap-3 font-extrabold text-brand-600 hover:gap-5 transition-all">Support
+                        This Program <span>→</span></a>
+                </div>
+            </div>
+
+            <!-- Program 4: Youth Fellowship -->
+            <div
+                class="group relative bg-white dark:bg-slate-900 rounded-[2.5rem] border border-slate-200/60 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none overflow-hidden hover:-translate-y-2 transition-all duration-500">
+                <div class="aspect-[16/9] overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=800"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                        alt="Youth">
+                    <div
+                        class="absolute top-6 left-6 px-4 py-2 bg-solidarity text-white text-xs font-black uppercase tracking-widest rounded-xl">
+                        Youth Fellowship</div>
+                </div>
+                <div class="p-10">
+                    <div class="flex items-start justify-between mb-4">
+                        <h3 class="text-3xl font-black group-hover:text-brand-600 transition-colors">Future Peace
+                            Leaders</h3>
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-solidarity/10 flex items-center justify-center text-solidarity">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed font-medium">
+                        An intensive immersion fellowship for university students to live and work in diverse community
+                        centers, breaking ideological silos through proximity.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mb-8 py-6 border-y border-slate-100 dark:border-slate-800">
+                        <div>
+                            <p class="text-xs font-black text-slate-400 uppercase mb-1">Participants</p>
+                            <p class="text-xl font-bold">850 Students</p>
+                        </div>
+                        <div>
+                            <p class="text-xs font-black text-slate-400 uppercase mb-1">Success Rate</p>
+                            <p class="text-xl font-bold">92% Engagement</p>
+                        </div>
+                    </div>
+                    <div class="mb-8">
+                        <div class="flex justify-between text-xs font-black uppercase text-slate-500 mb-2">
+                            <span>Funding Goal</span>
+                            <span>$150,000 / $150k</span>
+                        </div>
+                        <div class="w-full h-3 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                            <div class="h-full bg-solidarity rounded-full relative" style="width: 100%;">
+                                <div class="absolute inset-0 progress-shimmer"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="volunteer.html"
+                        class="inline-flex items-center gap-3 font-extrabold text-brand-600 hover:gap-5 transition-all text-sm uppercase tracking-widest">Fully
+                        Funded ✓</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Impact CTA Section -->
+    <section class="pb-32 px-6">
+        <div class="max-w-7xl mx-auto rounded-[3.5rem] bg-slate-950 p-12 md:p-24 relative overflow-hidden text-white">
+            <div
+                class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-brand-600/20 to-transparent -skew-x-12 translate-x-1/4">
+            </div>
+            <div class="relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-black mb-6 leading-tight">Empower These Initiatives with Your
+                        Support.</h2>
+                    <p class="text-slate-400 text-lg md:text-xl font-medium mb-10">Your contribution is more than a
+                        donation—it's a direct investment in the social fabric of a more harmonious world.</p>
+                    <div class="flex flex-wrap gap-5">
+                        <a href="donate.html"
+                            class="px-10 py-5 bg-white text-slate-900 rounded-2xl font-black text-lg hover:scale-105 transition-all">Support
+                            Now</a>
+                        <a href="contact.html"
+                            class="px-10 py-5 border border-slate-700 text-white rounded-2xl font-black text-lg hover:bg-slate-900 transition-all">Request
+                            Data Pack</a>
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-8 bg-white/5 backdrop-blur-md rounded-3xl border border-white/10">
+                            <p class="text-brand-400 text-4xl font-black mb-2">90%</p>
+                            <p class="text-white text-sm font-bold uppercase tracking-wider">Direct Project Funding</p>
+                        </div>
+                        <div class="p-8 bg-white/5 backdrop-blur-md rounded-3xl border border-white/10">
+                            <p class="text-harmony text-4xl font-black mb-2">50+</p>
+                            <p class="text-white text-sm font-bold uppercase tracking-wider">Active Field Hubs</p>
+                        </div>
+                        <div class="p-8 bg-white/5 backdrop-blur-md rounded-3xl border border-white/10">
+                            <p class="text-solidarity text-4xl font-black mb-2">12k</p>
+                            <p class="text-white text-sm font-bold uppercase tracking-wider">Monthly Volunteers</p>
+                        </div>
+                        <div class="p-8 bg-white/5 backdrop-blur-md rounded-3xl border border-white/10">
+                            <p class="text-peace text-4xl font-black mb-2">A+</p>
+                            <p class="text-white text-sm font-bold uppercase tracking-wider">Transparency Rating</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
+            <div class="md:col-span-2">
+                <a href="#" class="flex items-center gap-3 mb-8">
+                    <div
+                        class="w-10 h-10 bg-brand-600 rounded-xl flex items-center justify-center text-white font-bold">
+                        U</div>
+                    <span class="text-2xl font-black tracking-tighter">UnityCircle</span>
+                </a>
+                <p class="text-slate-500 text-lg max-w-sm leading-relaxed mb-8">Building a more harmonious world through
+                    evidence-based social initiatives and global solidarity.</p>
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition"><svg
+                            class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                        </svg></a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition"><svg
+                            class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.669-.072-4.949-.2-4.357-2.618-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg></a>
+                </div>
+            </div>
+            <div>
+                <h5 class="font-black uppercase tracking-widest text-xs mb-8">Organization</h5>
+                <ul class="space-y-4 text-slate-500 font-bold">
+                    <li><a href="#" class="hover:text-brand-600 transition">Our Story</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Team</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Impact Report</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Careers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-black uppercase tracking-widest text-xs mb-8">Resources</h5>
+                <ul class="space-y-4 text-slate-500 font-bold">
+                    <li><a href="#" class="hover:text-brand-600 transition">Press Kit</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Annual Audits</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Brand Assets</a></li>
+                    <li><a href="#" class="hover:text-brand-600 transition">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-6 pt-12 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-slate-400 text-xs font-bold uppercase tracking-widest">© 2026 UnityCircle NGO. All Rights
+                Reserved.</p>
+            <div class="flex gap-8 text-[10px] font-black uppercase tracking-widest text-slate-400">
+                <a href="#" class="hover:text-brand-600 transition">Privacy Policy</a>
+                <a href="#" class="hover:text-brand-600 transition">Terms of Service</a>
+                <a href="#" class="hover:text-brand-600 transition">Cookie Settings</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
