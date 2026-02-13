@@ -7,7 +7,7 @@ This website represents an interfaith and community-driven organization focused 
 
 ## 🚀 Live Demo  
 
-🔗 **Live Website:** https://your-live-link-here.com  
+🔗 **Live Website:** https://gauravaswal98.github.io/NGO-website-UnityCircle/
 
 ---
 
