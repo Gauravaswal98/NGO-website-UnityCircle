@@ -1,55 +1,60 @@
-UnityCircle | Volunteer Portal
+# 🌍 UnityCircle – NGO Website  
 
-UnityCircle is a modern, high-fidelity web platform designed for non-governmental organizations to streamline volunteer recruitment. The interface balances a professional, corporate aesthetic with warm, human-centric design tokens to foster trust and community engagement.
+A modern and responsive NGO website built using **HTML5, Tailwind CSS, and JavaScript**.  
+This website represents an interfaith and community-driven organization focused on unity, dialogue, and social solidarity.
 
-✨ Key Features
+---
 
-Premium UI/UX: Built with a "Glassmorphic" design system, utilizing backdrop blurs and fluid mesh gradients.
+## 🚀 Live Demo  
 
-Responsive Architecture: Fully optimized for mobile, tablet, and desktop viewing.
+🔗 **Live Website:** https://your-live-link-here.com  
 
-Interactive Forms: Features animated input fields, floating labels, and real-time submission feedback.
+---
 
-Performance Optimized: Lightweight asset loading and modern CSS techniques for rapid time-to-interact.
+## 📌 About the Project  
 
-Branding: Custom-defined color palette (Brand, Accent, Harmony) tailored for social impact organizations.
+UnityCircle is designed to provide a clean, user-friendly, and fully responsive experience.  
+It showcases the organization’s mission, philosophy, programs, events, and ways to get involved.
 
-🛠️ Technology Stack
+The project focuses on:
 
-HTML5: Semantic structure for better SEO and accessibility.
+- Clean and modern UI  
+- Fully responsive layout  
+- Structured multi-page navigation  
+- Smooth user experience  
 
-Tailwind CSS: Utility-first styling with custom configuration for brand colors and typography.
+---
 
-Plus Jakarta Sans: A modern, highly legible typeface for a professional look.
+## 🛠️ Tech Stack  
 
-JavaScript (ES6+): Lightweight logic for form handling and interactive UI states.
+- **HTML5** – Structure  
+- **Tailwind CSS** – Styling & Responsive Design  
+- **JavaScript (Vanilla JS)** – Interactivity  
 
-🚀 Quick Start
+---
 
-Clone the repository:
+## 📂 Pages Included  
 
-git clone [https://github.com/](https://github.com/)[your-username]/unitycircle-volunteer.git
+The website includes the following pages visible in the navigation bar:
 
+- 🏠 Home  
+- ℹ️ About  
+- 📰 News  
+- 📚 Programs  
+- 🎉 Events  
+- 🖼️ Gallery  
+- 🤝 Join Us  
+- 📞 Contact  
 
-Open the project:
-Simply open volunteer.html in any modern web browser.
+---
 
-🎨 Customization
+## ✨ Features  
 
-You can easily modify the branding by adjusting the tailwind.config object in the <head> of the HTML file:
+- Fully Responsive Design  
+- Modern Tailwind Layout  
+- Clean Navigation Bar  
+- Donate Call-To-Action Button  
+- Multi-section NGO Website  
+- Well-structured Code  
 
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        brand: { /* Your Primary Colors */ },
-        accent: '/* Your Highlight Color */',
-      }
-    }
-  }
-}
-
-
-📄 License
-
-This project is open-source and available under the MIT License.
+---
